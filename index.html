@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>Euro Truck Stop</title>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
@@ -11,93 +12,49 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#020617;
+background:#020b2d;
 color:white;
 }
 
 header{
 padding:20px;
 text-align:center;
-background:#020617;
 }
 
-header h1{
-margin:0;
+h1{
 font-size:42px;
+margin:0;
 }
 
-header p{
-color:#cbd5e1;
-margin-top:10px;
-font-size:18px;
-}
-
-.topbar{
-padding:12px;
-display:flex;
-gap:10px;
-background:#0f172a;
-}
-
-input{
-flex:1;
-padding:14px;
-border:none;
-border-radius:12px;
-font-size:16px;
-}
-
-button{
-padding:14px;
-border:none;
-border-radius:12px;
-background:#2563eb;
-color:white;
-font-weight:bold;
-font-size:16px;
+p{
+font-size:20px;
+opacity:0.9;
 }
 
 #map{
-height:55vh;
+height:70vh;
 width:100%;
-}
-
-.panel{
-padding:16px;
+border-top:2px solid #1e90ff;
 }
 
 .card{
-background:#111827;
-border:1px solid #334155;
-border-radius:20px;
-padding:16px;
-margin-bottom:16px;
+background:#08153f;
+margin:15px;
+padding:15px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,0.1);
 }
 
-.card h3{
-margin-top:0;
-font-size:24px;
+.card h2{
+margin:0 0 10px;
 }
 
-.safe{
-color:#22c55e;
-font-weight:bold;
-}
-
-.danger{
-color:#ef4444;
-font-weight:bold;
-}
-
-.btn{
+.badge{
 display:inline-block;
-margin-top:10px;
-padding:12px 16px;
-background:#2563eb;
-border-radius:12px;
-color:white;
-text-decoration:none;
-font-weight:bold;
+padding:5px 10px;
+border-radius:10px;
+background:#1e90ff;
+margin-top:8px;
 }
 </style>
 </head>
@@ -106,160 +63,70 @@ font-weight:bold;
 
 <header>
 <h1>🚛 Euro Truck Stop</h1>
-<p>Safe truck parking across Europe</p>
+<p>Паркинги и места за нощувка в Европа</p>
 </header>
-
-<div class="topbar">
-<input type="text" id="search" placeholder="Търси държава или паркинг">
-<button onclick="findMe()">📍 Аз</button>
-</div>
 
 <div id="map"></div>
 
-<div class="panel" id="list"></div>
+<div id="list"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
+const SUPABASE_URL = "https://cwrcaweybftuphjgrtba.supabase.co";
+const SUPABASE_KEY = "sb_publishable_F9Mz5V-ejFuuQ24whlFY_w_jSJ8jV4J";
 
-const map = L.map('map').setView([55,10],5);
+const map = L.map('map').setView([54.5, 15], 5);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
 attribution:'© OpenStreetMap'
 }).addTo(map);
 
-const spots = [
+async function loadParkings(){
 
+const response = await fetch(
+`${SUPABASE_URL}/rest/v1/parkings`,
 {
-name:"Malmö Truck Stop",
-country:"Sweden",
-safe:true,
-text:"Safe parking with showers and food",
-lat:55.605,
-lng:13.0038
-},
-
-{
-name:"Padborg Parking",
-country:"Denmark",
-safe:true,
-text:"Secure truck parking",
-lat:54.826,
-lng:9.362
-},
-
-{
-name:"Hamburg A7",
-country:"Germany",
-safe:true,
-text:"Large truck stop and fuel",
-lat:53.551,
-lng:9.993
-},
-
-{
-name:"Rotterdam Industrial",
-country:"Netherlands",
-safe:false,
-text:"Industrial overnight area",
-lat:51.924,
-lng:4.477
-},
-
-{
-name:"Lille Industrial",
-country:"France",
-safe:false,
-text:"Risk of theft at night",
-lat:50.629,
-lng:3.057
+headers:{
+apikey:SUPABASE_KEY,
+Authorization:`Bearer ${SUPABASE_KEY}`
 }
+}
+);
 
-];
+const data = await response.json();
 
-const list=document.getElementById("list");
+const list = document.getElementById("list");
 
-spots.forEach(spot=>{
+data.forEach(parking=>{
 
-const color = spot.safe ? "green" : "red";
+if(parking.lat && parking.lng){
 
-const icon = L.icon({
-iconUrl:`https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
-shadowUrl:'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-iconSize:[25,41],
-iconAnchor:[12,41]
-});
-
-const maps=`https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
-
-L.marker([spot.lat,spot.lng],{icon}).addTo(map)
+L.marker([parking.lat, parking.lng])
+.addTo(map)
 .bindPopup(`
-<b>${spot.name}</b><br>
-${spot.country}<br>
-${spot.text}<br><br>
-<a href="${maps}" target="_blank">Навигирай</a>
+<b>${parking.name}</b><br>
+${parking.country || ""}
 `);
 
-list.innerHTML += `
-<div class="card">
-<h3>${spot.name}</h3>
+}
 
-<p>📍 ${spot.country}</p>
+const card = document.createElement("div");
+card.className = "card";
 
-<p class="${spot.safe ? 'safe':'danger'}">
-${spot.safe ? '🟢 SAFE':'🔴 DANGEROUS'}
-</p>
-
-<p>${spot.text}</p>
-
-<a class="btn" href="${maps}" target="_blank">
-🗺️ Google Maps
-</a>
-
-</div>
+card.innerHTML = `
+<h2>${parking.name || "Truck Parking"}</h2>
+<div>📍 ${parking.country || ""}</div>
+<div class="badge">${parking.type || "Parking"}</div>
 `;
 
-});
-
-function findMe(){
-
-if(navigator.geolocation){
-
-navigator.geolocation.getCurrentPosition(position=>{
-
-const lat=position.coords.latitude;
-const lng=position.coords.longitude;
-
-map.setView([lat,lng],10);
-
-L.marker([lat,lng]).addTo(map)
-.bindPopup("📍 Ти си тук")
-.openPopup();
+list.appendChild(card);
 
 });
 
 }
 
-}
-
-document.getElementById("search").addEventListener("input",function(){
-
-const value=this.value.toLowerCase();
-
-const cards=document.querySelectorAll(".card");
-
-cards.forEach(card=>{
-
-if(card.innerText.toLowerCase().includes(value)){
-card.style.display="block";
-}else{
-card.style.display="none";
-}
-
-});
-
-});
-
+loadParkings();
 </script>
 
 </body>
