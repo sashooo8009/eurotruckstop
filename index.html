@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Euro Truck Stop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+    .hero {
+      min-height: 100vh;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1d4ed8, transparent 35%), #0f172a;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #cbd5e1;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 22px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 420px;
+      text-align: left;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 24px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 14px;
+      font-weight: bold;
+    }
+    .features {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .feature {
+      background: #020617;
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px solid #1e293b;
+    }
+  </style>
 </head>
-<body style="font-family:Arial;text-align:center;padding:40px;">
-  <h1>🚛 Euro Truck Stop</h1>
-  <p>Find truck parking across Europe and Scandinavia.</p>
+<body>
+  <section class="hero">
+    <h1>🚛 Euro Truck Stop</h1>
+    <p>Find safe truck parking across Europe and Scandinavia.</p>
+
+    <a class="button" href="https://www.google.com/maps" target="_blank">
+      Open Map
+    </a>
+
+    <div class="card">
+      <h2>What is coming?</h2>
+      <div class="features">
+        <div class="feature">🅿️ Truck parking locations</div>
+        <div class="feature">🛡️ Safe and dangerous place reports</div>
+        <div class="feature">🚿 Showers, toilets, food and fuel</div>
+        <div class="feature">⭐ Driver ratings and comments</div>
+        <div class="feature">📍 Navigation with Google Maps</div>
+      </div>
+    </div>
+
+    <p>Built for truck drivers. Coming soon.</p>
+  </section>
 </body>
 </html>
