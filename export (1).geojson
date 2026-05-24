@@ -1,0 +1,3485 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-05-24T20:35:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4854853",
+        "access": "customers",
+        "amenity": "parking",
+        "bus": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "lit": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0384791,
+          54.1059415
+        ]
+      },
+      "id": "way/4854853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/5426500",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8735571,
+          58.4824521
+        ]
+      },
+      "id": "relation/5426500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25660772",
+        "access": "yes",
+        "addr:city": "Schortens",
+        "addr:housenumber": "1",
+        "addr:postcode": "26419",
+        "addr:street": "Olympiastraße",
+        "amenity": "parking",
+        "capacity": "830",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Parkplatz \"E\"",
+        "operator": "DIBAG Dienstleistung und Industriepark GmbH & Co. KG",
+        "parking": "surface",
+        "supervised": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0324294,
+          53.523515
+        ]
+      },
+      "id": "way/25660772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/37850026",
+        "access": "customers",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3511846,
+          54.828587
+        ]
+      },
+      "id": "way/37850026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/56451643",
+        "access": "no",
+        "amenity": "parking",
+        "bus": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7672565,
+          55.5121347
+        ]
+      },
+      "id": "way/56451643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/89452499",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "26",
+        "capacity:hgv": "7",
+        "fee": "yes",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "paving_stones",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.0312964,
+          53.0533315
+        ]
+      },
+      "id": "way/89452499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/96116396",
+        "access": "permissive",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Prysmian Kabelwerk Schwerin",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3370232,
+          53.6360103
+        ]
+      },
+      "id": "way/96116396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/96875342",
+        "access": "yes",
+        "amenity": "parking",
+        "bus": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "motorcar": "yes",
+        "motorcycle": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7023797,
+          53.5065302
+        ]
+      },
+      "id": "way/96875342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/98613766",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0846262,
+          57.2546272
+        ]
+      },
+      "id": "way/98613766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/98613769",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0800084,
+          57.2512359
+        ]
+      },
+      "id": "way/98613769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/134382330",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5967944,
+          55.4556272
+        ]
+      },
+      "id": "way/134382330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135765176",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4892017,
+          53.4389716
+        ]
+      },
+      "id": "way/135765176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135769277",
+        "access": "yes",
+        "amenity": "parking",
+        "bus": "yes",
+        "capacity": "13",
+        "caravan": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4688495,
+          53.534096
+        ]
+      },
+      "id": "way/135769277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/135769280",
+        "access": "yes",
+        "amenity": "parking",
+        "bus": "yes",
+        "capacity": "13",
+        "caravan": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4692208,
+          53.5380401
+        ]
+      },
+      "id": "way/135769280"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/136588950",
+        "access": "yes",
+        "amenity": "parking",
+        "bus": "yes",
+        "caravan": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3802469,
+          53.8535494
+        ]
+      },
+      "id": "way/136588950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/148899586",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.935996,
+          55.5599911
+        ]
+      },
+      "id": "way/148899586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/163315536",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8536724,
+          59.3919472
+        ]
+      },
+      "id": "way/163315536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/164054531",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0218075,
+          53.5418428
+        ]
+      },
+      "id": "way/164054531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/169465725",
+        "amenity": "parking",
+        "bus": "yes",
+        "capacity": "5",
+        "caravan": "yes",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6090284,
+          53.7907946
+        ]
+      },
+      "id": "way/169465725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/169465729",
+        "amenity": "parking",
+        "bus": "yes",
+        "capacity": "5",
+        "caravan": "yes",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6050788,
+          53.7920915
+        ]
+      },
+      "id": "way/169465729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174922290",
+        "access": "no",
+        "amenity": "parking",
+        "capacity": "1",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0739355,
+          56.2231137
+        ]
+      },
+      "id": "way/174922290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/182974291",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9853721,
+          53.112915
+        ]
+      },
+      "id": "way/182974291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/191908912",
+        "access": "yes",
+        "amenity": "parking",
+        "bus": "yes",
+        "caravan": "yes",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3767007,
+          53.8516051
+        ]
+      },
+      "id": "way/191908912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/199157149",
+        "access": "yes",
+        "amenity": "parking",
+        "check_date:fee": "2025-09-22",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Schwertransport Parkplatz",
+        "park_ride": "no",
+        "parking": "surface",
+        "vehicle": "no",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1798606,
+          53.0001143
+        ]
+      },
+      "id": "way/199157149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/199682972",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "11",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "street_side",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7090937,
+          59.2788417
+        ]
+      },
+      "id": "way/199682972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206657443",
+        "amenity": "parking",
+        "fee": "yes",
+        "hgv": "yes",
+        "parking": "surface",
+        "vehicle": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4934926,
+          53.4257786
+        ]
+      },
+      "id": "way/206657443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/225201138",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "9",
+        "hgv": "yes",
+        "name": "Bergslagsporten",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1349849,
+          59.4547865
+        ]
+      },
+      "id": "way/225201138"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232908649",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7610231,
+          53.718738
+        ]
+      },
+      "id": "way/232908649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/235486678",
+        "amenity": "parking",
+        "hgv": "yes",
+        "motorcar": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9911223,
+          55.7645102
+        ]
+      },
+      "id": "way/235486678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/239969570",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2961424,
+          58.3726326
+        ]
+      },
+      "id": "way/239969570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/240258692",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "motorcar": "no",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8283762,
+          53.0232295
+        ]
+      },
+      "id": "way/240258692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241467681",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6170824,
+          53.4775663
+        ]
+      },
+      "id": "way/241467681"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241467682",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6162039,
+          53.4778185
+        ]
+      },
+      "id": "way/241467682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241488548",
+        "amenity": "parking",
+        "capacity:disabled": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8923931,
+          53.0915208
+        ]
+      },
+      "id": "way/241488548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241559249",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "orientation": "diagonal",
+        "parking": "street_side",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7711661,
+          53.0952944
+        ]
+      },
+      "id": "way/241559249"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/248616448",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8108377,
+          53.2759684
+        ]
+      },
+      "id": "way/248616448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/248616461",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8013414,
+          53.2732602
+        ]
+      },
+      "id": "way/248616461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/253482213",
+        "amenity": "parking",
+        "hgv": "yes",
+        "motorcar": "no",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3192013,
+          55.7725208
+        ]
+      },
+      "id": "way/253482213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/286774762",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.818165,
+          55.938231
+        ]
+      },
+      "id": "way/286774762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/286774764",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "street_side",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8186536,
+          55.9415671
+        ]
+      },
+      "id": "way/286774764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/297339942",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9523771,
+          58.4909554
+        ]
+      },
+      "id": "way/297339942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/297431895",
+        "access": "yes",
+        "amenity": "parking",
+        "bus": "designated",
+        "capacity": "24",
+        "caravan": "designated",
+        "hgv": "yes",
+        "lit": "yes",
+        "motorcar": "designated",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0836454,
+          59.1378846
+        ]
+      },
+      "id": "way/297431895"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/297859069",
+        "access": "yes",
+        "alt_name": "Albackens rastplats",
+        "amenity": "parking",
+        "capacity": "11",
+        "fixme": "NVDB import: NVDB_extra_nodes need to be mapped manually",
+        "hgv": "yes",
+        "highway": "rest_area",
+        "name": "Rastplats Albacken",
+        "note": "private key NVDB_extra_nodes = [amenity=sanitary_dump_station], [leisure=playground] see also fixme",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1590661,
+          58.3387522
+        ]
+      },
+      "id": "way/297859069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/302279722",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1647753,
+          55.4899789
+        ]
+      },
+      "id": "way/302279722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/337180450",
+        "amenity": "parking",
+        "hgv": "yes",
+        "motor_vehicle": "private",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2524681,
+          55.6351815
+        ]
+      },
+      "id": "way/337180450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/358976211",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6688045,
+          58.2256205
+        ]
+      },
+      "id": "way/358976211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366511539",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4738868,
+          56.3621004
+        ]
+      },
+      "id": "way/366511539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/428689861",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "street_side",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6856413,
+          57.4893797
+        ]
+      },
+      "id": "way/428689861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/434233297",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9780521,
+          56.0690017
+        ]
+      },
+      "id": "way/434233297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/454817511",
+        "access": "no",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7275661,
+          53.368072
+        ]
+      },
+      "id": "way/454817511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/454817519",
+        "access": "no",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7310574,
+          53.3666312
+        ]
+      },
+      "id": "way/454817519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/496996157",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9592826,
+          53.3781718
+        ]
+      },
+      "id": "way/496996157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/496996158",
+        "access": "yes",
+        "amenity": "parking",
+        "check_date:fee": "2025-08-17",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9513896,
+          53.3779274
+        ]
+      },
+      "id": "way/496996158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/501749148",
+        "access": "permissive",
+        "amenity": "parking",
+        "description": "Truck stop, overnight stop",
+        "hgv": "yes",
+        "lit": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0994939,
+          58.1566771
+        ]
+      },
+      "id": "way/501749148"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/538476337",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "Spielhalle Truck Stop",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2007337,
+          53.5696578
+        ]
+      },
+      "id": "way/538476337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/538476339",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "informal": "yes",
+        "name": "Truck Parking",
+        "parking": "surface",
+        "surface": "ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2016453,
+          53.5699675
+        ]
+      },
+      "id": "way/538476339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/550395871",
+        "amenity": "parking",
+        "fee": "no",
+        "goods": "yes",
+        "hgv": "yes",
+        "motorcar": "no",
+        "park_ride": "no",
+        "supervised": "no",
+        "tourist_bus": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7860674,
+          59.9750141
+        ]
+      },
+      "id": "way/550395871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/593818469",
+        "access": "permissive",
+        "amenity": "parking",
+        "hgv": "yes",
+        "maxheight": "none",
+        "motor_vehicle": "no",
+        "park_ride": "no",
+        "parking": "surface",
+        "smoothness": "excellent",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8955355,
+          53.5183861
+        ]
+      },
+      "id": "way/593818469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/633798294",
+        "amenity": "parking",
+        "capacity": "1",
+        "hgv": "yes",
+        "motorcar": "no",
+        "name": "9",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2363244,
+          56.0891647
+        ]
+      },
+      "id": "way/633798294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/633798295",
+        "amenity": "parking",
+        "capacity": "1",
+        "hgv": "yes",
+        "motorcar": "no",
+        "name": "8",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.23732,
+          56.0890385
+        ]
+      },
+      "id": "way/633798295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/633798296",
+        "amenity": "parking",
+        "capacity": "1",
+        "hgv": "yes",
+        "motorcar": "no",
+        "name": "7",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.236964,
+          56.0890321
+        ]
+      },
+      "id": "way/633798296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/633798297",
+        "amenity": "parking",
+        "capacity": "1",
+        "hgv": "yes",
+        "motorcar": "no",
+        "name": "6",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2366019,
+          56.0890239
+        ]
+      },
+      "id": "way/633798297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/638340090",
+        "addr:city": "Jönköping",
+        "addr:housenumber": "51",
+        "addr:place": "Hyltena",
+        "addr:postcode": "55592",
+        "amenity": "parking",
+        "covered": "no",
+        "fee": "yes",
+        "hgv": "yes",
+        "name": "Drivers First Security Park Hyltena",
+        "operator": "Drivers First",
+        "operator:type": "private",
+        "supervised": "yes",
+        "surface": "asphalt",
+        "website": "https://driversfirst.eu/our-locations/jonkoping/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1799685,
+          57.6651923
+        ]
+      },
+      "id": "way/638340090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/651628721",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2753124,
+          53.1975417
+        ]
+      },
+      "id": "way/651628721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/651628722",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2756671,
+          53.196232
+        ]
+      },
+      "id": "way/651628722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/660552546",
+        "amenity": "parking",
+        "bus": "yes",
+        "caravan": "yes",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6090251,
+          53.7906346
+        ]
+      },
+      "id": "way/660552546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/685796108",
+        "amenity": "parking",
+        "goods": "yes",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5492553,
+          59.3296484
+        ]
+      },
+      "id": "way/685796108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/733998248",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1278381,
+          53.917745
+        ]
+      },
+      "id": "way/733998248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/744452198",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7599033,
+          59.7927587
+        ]
+      },
+      "id": "way/744452198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/744452208",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "19",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Björnfallet",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4369609,
+          59.3152362
+        ]
+      },
+      "id": "way/744452208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/778625661",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8311299,
+          59.4259696
+        ]
+      },
+      "id": "way/778625661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/798460337",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7614319,
+          56.6161519
+        ]
+      },
+      "id": "way/798460337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/798460340",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.761174,
+          56.6163053
+        ]
+      },
+      "id": "way/798460340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/798460353",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7622774,
+          56.6155595
+        ]
+      },
+      "id": "way/798460353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/799174192",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2087446,
+          58.3536684
+        ]
+      },
+      "id": "way/799174192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/799174197",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2079937,
+          58.3536092
+        ]
+      },
+      "id": "way/799174197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/809263092",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "yes",
+        "hgv": "yes",
+        "lit": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2313135,
+          54.0223605
+        ]
+      },
+      "id": "way/809263092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/809263093",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "yes",
+        "hgv": "yes",
+        "lit": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2310541,
+          54.0222924
+        ]
+      },
+      "id": "way/809263093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/812913696",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "street_side",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6847342,
+          57.4897046
+        ]
+      },
+      "id": "way/812913696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/822568864",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Langrønningen døgnhvileplass",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5095655,
+          58.9712667
+        ]
+      },
+      "id": "way/822568864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/833244426",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "18",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9384273,
+          58.8106016
+        ]
+      },
+      "id": "way/833244426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/833244427",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "sanitary_dump_station": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9382042,
+          58.8103282
+        ]
+      },
+      "id": "way/833244427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/833244429",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9383067,
+          58.8101408
+        ]
+      },
+      "id": "way/833244429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/833244430",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9380564,
+          58.8102103
+        ]
+      },
+      "id": "way/833244430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/833244431",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.937783,
+          58.8102928
+        ]
+      },
+      "id": "way/833244431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/833244432",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity:disabled": "1",
+        "fee": "no",
+        "hgv": "yes",
+        "operator": "trafikverket",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9375156,
+          58.8103732
+        ]
+      },
+      "id": "way/833244432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/887989882",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6595216,
+          58.4133044
+        ]
+      },
+      "id": "way/887989882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/887989886",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.660172,
+          58.4127045
+        ]
+      },
+      "id": "way/887989886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/887989887",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6614427,
+          58.4122747
+        ]
+      },
+      "id": "way/887989887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/887989888",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6631253,
+          58.4123948
+        ]
+      },
+      "id": "way/887989888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/887989889",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6636385,
+          58.4128982
+        ]
+      },
+      "id": "way/887989889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/893169636",
+        "amenity": "parking",
+        "bus": "yes",
+        "coach": "yes",
+        "hgv": "yes",
+        "motor_vehicle": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8084911,
+          55.309235
+        ]
+      },
+      "id": "way/893169636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/919790709",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "11",
+        "hgv": "yes",
+        "name": "Dalstorp",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0637797,
+          58.2009761
+        ]
+      },
+      "id": "way/919790709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925242091",
+        "amenity": "parking",
+        "bus": "yes",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3294804,
+          55.8455017
+        ]
+      },
+      "id": "way/925242091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925242092",
+        "amenity": "parking",
+        "bus": "yes",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3299775,
+          55.8457214
+        ]
+      },
+      "id": "way/925242092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925242093",
+        "amenity": "parking",
+        "bus": "yes",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3281185,
+          55.8458869
+        ]
+      },
+      "id": "way/925242093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925242094",
+        "amenity": "parking",
+        "bus": "yes",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3286646,
+          55.8460903
+        ]
+      },
+      "id": "way/925242094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925242095",
+        "amenity": "parking",
+        "bus": "yes",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3291697,
+          55.8463108
+        ]
+      },
+      "id": "way/925242095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/931709159",
+        "access": "yes",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1862726,
+          59.6021407
+        ]
+      },
+      "id": "way/931709159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/940573263",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8587176,
+          57.7024948
+        ]
+      },
+      "id": "way/940573263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/940573264",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8581446,
+          57.7023605
+        ]
+      },
+      "id": "way/940573264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/952337985",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "street_side",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8410813,
+          53.0242513
+        ]
+      },
+      "id": "way/952337985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/973592104",
+        "amenity": "parking",
+        "hgv": "yes",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4970904,
+          55.9651231
+        ]
+      },
+      "id": "way/973592104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/985823241",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1981017,
+          53.9674804
+        ]
+      },
+      "id": "way/985823241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/985823242",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1970558,
+          53.9699436
+        ]
+      },
+      "id": "way/985823242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/986213461",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0733202,
+          53.2854159
+        ]
+      },
+      "id": "way/986213461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/986213462",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0726536,
+          53.2848863
+        ]
+      },
+      "id": "way/986213462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/986213464",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "motorcar": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6523837,
+          53.3707318
+        ]
+      },
+      "id": "way/986213464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/986776541",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "paved",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3005132,
+          53.5754005
+        ]
+      },
+      "id": "way/986776541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001850460",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0767207,
+          57.160235
+        ]
+      },
+      "id": "way/1001850460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1051918513",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0254573,
+          57.8517212
+        ]
+      },
+      "id": "way/1051918513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1081960727",
+        "access": "no",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7010337,
+          55.8272867
+        ]
+      },
+      "id": "way/1081960727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1094376591",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3908295,
+          53.0581998
+        ]
+      },
+      "id": "way/1094376591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1123406765",
+        "amenity": "parking",
+        "capacity": "15",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1442894,
+          53.5847187
+        ]
+      },
+      "id": "way/1123406765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1123406766",
+        "amenity": "parking",
+        "capacity": "15",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1443589,
+          53.5845052
+        ]
+      },
+      "id": "way/1123406766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125719775",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5807771,
+          53.4223798
+        ]
+      },
+      "id": "way/1125719775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125719776",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5823318,
+          53.4226118
+        ]
+      },
+      "id": "way/1125719776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125719777",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5819078,
+          53.4224748
+        ]
+      },
+      "id": "way/1125719777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125719778",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5810939,
+          53.4223007
+        ]
+      },
+      "id": "way/1125719778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125719779",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5814862,
+          53.422354
+        ]
+      },
+      "id": "way/1125719779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125721375",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5828659,
+          53.4217555
+        ]
+      },
+      "id": "way/1125721375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125721376",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5809989,
+          53.420981
+        ]
+      },
+      "id": "way/1125721376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125721377",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5825515,
+          53.4217953
+        ]
+      },
+      "id": "way/1125721377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125721378",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5819977,
+          53.4217089
+        ]
+      },
+      "id": "way/1125721378"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1125721379",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5810185,
+          53.4211667
+        ]
+      },
+      "id": "way/1125721379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1190026270",
+        "access": "no",
+        "amenity": "parking",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "street_side",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2228024,
+          59.5199256
+        ]
+      },
+      "id": "way/1190026270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1190066193",
+        "access": "no",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "street_side",
+        "surface": "asphalt",
+        "trailer": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2544093,
+          59.5050263
+        ]
+      },
+      "id": "way/1190066193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1190066203",
+        "access": "no",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "street_side",
+        "surface": "asphalt",
+        "trailer": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2535608,
+          59.5048524
+        ]
+      },
+      "id": "way/1190066203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1253928709",
+        "access": "customers",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0985236,
+          53.2809242
+        ]
+      },
+      "id": "node/1253928709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1270443844",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "lane",
+        "surface": "paving_stones",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7384016,
+          53.0393635
+        ]
+      },
+      "id": "way/1270443844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1270443845",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "lane",
+        "surface": "paving_stones",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7360216,
+          53.0401249
+        ]
+      },
+      "id": "way/1270443845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1274124995",
+        "amenity": "parking",
+        "hgv": "yes",
+        "motorcar": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.785115,
+          53.0873261
+        ]
+      },
+      "id": "way/1274124995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1274124996",
+        "amenity": "parking",
+        "hgv": "yes",
+        "motorcar": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7855206,
+          53.0874774
+        ]
+      },
+      "id": "way/1274124996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1274124997",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "motorcar": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7861949,
+          53.0868154
+        ]
+      },
+      "id": "way/1274124997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1292483897",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "lane",
+        "surface": "paving_stones",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9229044,
+          53.3976514
+        ]
+      },
+      "id": "way/1292483897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1292483898",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "lane",
+        "surface": "paving_stones",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.922178,
+          53.3980234
+        ]
+      },
+      "id": "way/1292483898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1293422816",
+        "amenity": "parking",
+        "capacity:hgv": "2",
+        "hgv": "yes",
+        "maxstay": "25 hours",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5329346,
+          55.7999588
+        ]
+      },
+      "id": "way/1293422816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1294886877",
+        "amenity": "parking",
+        "capacity:hgv": "2",
+        "hgv": "yes",
+        "maxstay": "25 hours",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5328159,
+          55.7999633
+        ]
+      },
+      "id": "way/1294886877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1302131477",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4243462,
+          53.4881259
+        ]
+      },
+      "id": "way/1302131477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1302131482",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4225621,
+          53.4867708
+        ]
+      },
+      "id": "way/1302131482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1302131488",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "orientation": "diagonal",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4240835,
+          53.4881377
+        ]
+      },
+      "id": "way/1302131488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1302131489",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "orientation": "parallel",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4238195,
+          53.4881506
+        ]
+      },
+      "id": "way/1302131489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1302131491",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "orientation": "diagonal",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4237615,
+          53.4867892
+        ]
+      },
+      "id": "way/1302131491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1302131492",
+        "access": "private",
+        "amenity": "parking",
+        "hgv": "yes",
+        "orientation": "diagonal",
+        "parking": "surface",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4226887,
+          53.4845607
+        ]
+      },
+      "id": "way/1302131492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1391934162",
+        "amenity": "parking",
+        "capacity": "12",
+        "capacity:disabled": "0",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Truck parking",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9792067,
+          59.2061683
+        ]
+      },
+      "id": "way/1391934162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1391934163",
+        "amenity": "parking",
+        "capacity": "4",
+        "capacity:disabled": "0",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Truck parking",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9789199,
+          59.2065702
+        ]
+      },
+      "id": "way/1391934163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1421410017",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "gravel",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0610269,
+          53.3046043
+        ]
+      },
+      "id": "way/1421410017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1421421737",
+        "access": "customers",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0734702,
+          53.2910548
+        ]
+      },
+      "id": "way/1421421737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1462293530",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "lane",
+        "surface": "asphalt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6613591,
+          53.1358583
+        ]
+      },
+      "id": "way/1462293530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1479053511",
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "no",
+        "hgv": "yes",
+        "parking": "lane",
+        "surface": "paving_stones",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8633537,
+          53.4249564
+        ]
+      },
+      "id": "way/1479053511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1487683365",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "street_side",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8749651,
+          58.480013
+        ]
+      },
+      "id": "way/1487683365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1495327559",
+        "amenity": "parking",
+        "hgv": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1521171,
+          54.2104564
+        ]
+      },
+      "id": "way/1495327559"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1886839165",
+        "access": "no",
+        "amenity": "parking",
+        "description": "2 h gratis parkering 8-16",
+        "fee": "yes",
+        "hgv": "yes",
+        "name": "Safepark Brändåsen",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0029364,
+          59.0639016
+        ]
+      },
+      "id": "node/1886839165"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3771823351",
+        "access": "permissive",
+        "amenity": "parking",
+        "fee": "yes",
+        "hgv": "yes",
+        "motorcar": "no",
+        "motorcycle": "no",
+        "name": "Trucker-Parkplatz Autohof Hamburg Süd",
+        "parking": "surface",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8033144,
+          53.3703258
+        ]
+      },
+      "id": "node/3771823351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5018692767",
+        "amenity": "parking",
+        "capacity": "3",
+        "fee": "no",
+        "hgv": "yes",
+        "park_ride": "no",
+        "parking": "underground",
+        "supervised": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2494514,
+          58.8981641
+        ]
+      },
+      "id": "node/5018692767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5691481889",
+        "amenity": "parking",
+        "description": "Truck stop",
+        "drinking_water": "yes",
+        "hgv": "yes",
+        "name": "Støkken",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7411528,
+          59.6468519
+        ]
+      },
+      "id": "node/5691481889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7415931460",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3360741,
+          59.3827409
+        ]
+      },
+      "id": "node/7415931460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9032985418",
+        "access": "yes",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Skoftesta skans",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9443325,
+          59.5108169
+        ]
+      },
+      "id": "node/9032985418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9032985454",
+        "access": "yes",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Skoftesta skans",
+        "operator": "trafikverket",
+        "parking": "street_side"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9460665,
+          59.5131221
+        ]
+      },
+      "id": "node/9032985454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9154954235",
+        "access": "yes",
+        "addr:place": "-1",
+        "amenity": "parking",
+        "capacity": "8",
+        "hgv": "yes",
+        "name": "Eskiln",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.786341,
+          59.9750172
+        ]
+      },
+      "id": "node/9154954235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9245580338",
+        "access": "yes",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Nästången",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3792113,
+          57.8675226
+        ]
+      },
+      "id": "node/9245580338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9248730675",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "6",
+        "hgv": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5694085,
+          58.1478697
+        ]
+      },
+      "id": "node/9248730675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9906534857",
+        "access": "yes",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Hackelboö",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6803167,
+          58.1620165
+        ]
+      },
+      "id": "node/9906534857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9918722442",
+        "access": "yes",
+        "amenity": "parking",
+        "hgv": "yes",
+        "name": "Koviken",
+        "operator": "trafikverket",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7538782,
+          58.7190567
+        ]
+      },
+      "id": "node/9918722442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10121147074",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "30",
+        "hgv": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0825875,
+          59.1392982
+        ]
+      },
+      "id": "node/10121147074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10563684459",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "23",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Rothult",
+        "operator": "Trafikverket",
+        "parking": "lane"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6688476,
+          57.9339164
+        ]
+      },
+      "id": "node/10563684459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10574637556",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "31",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Höganloft",
+        "parking": "lane"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9530714,
+          58.0322245
+        ]
+      },
+      "id": "node/10574637556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11365604904",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "lane"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1453656,
+          57.2366845
+        ]
+      },
+      "id": "node/11365604904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11777822357",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "13",
+        "hgv": "yes",
+        "name": "Borasjön V",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5399361,
+          58.9707611
+        ]
+      },
+      "id": "node/11777822357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11777822611",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "1",
+        "hgv": "yes",
+        "name": "Borasjön Ö",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5396075,
+          58.9697689
+        ]
+      },
+      "id": "node/11777822611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12077040063",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "11",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Norrsjön",
+        "operator": "trafikverket",
+        "parking": "street_side"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.107832,
+          59.8331161
+        ]
+      },
+      "id": "node/12077040063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12094979380",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "10",
+        "fee": "no",
+        "hgv": "yes",
+        "name": "Laxbäcken",
+        "operator": "trafikverket",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0192842,
+          59.9020634
+        ]
+      },
+      "id": "node/12094979380"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12534647298",
+        "access": "yes",
+        "amenity": "parking",
+        "capacity": "11",
+        "hgv": "yes",
+        "name": "Sandbäcken",
+        "operator": "trafikverket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6601147,
+          59.295599
+        ]
+      },
+      "id": "node/12534647298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13638548818",
+        "amenity": "parking",
+        "hgv": "yes",
+        "parking": "street_side"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8745737,
+          58.479832
+        ]
+      },
+      "id": "node/13638548818"
+    }
+  ]
+}
