@@ -3,154 +3,85 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>Euro Truck Stop</title>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
 
 <style>
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#020617;
-  color:white;
-}
-
-header{
-  padding:20px;
-  text-align:center;
-  background:#020617;
+margin:0;
+background:#050816;
+color:white;
+font-family:Arial;
 }
 
 h1{
-  font-size:38px;
-  margin:0;
-}
-
-p{
-  color:#cbd5e1;
-  font-size:18px;
+text-align:center;
+padding:10px;
 }
 
 #map{
-  height:65vh;
-  width:100%;
-  border-top:3px solid #2563eb;
-  border-bottom:3px solid #2563eb;
+height:90vh;
+width:100%;
 }
 
-#list{
-  padding:15px;
-}
-
-.card{
-  background:#111827;
-  border:1px solid #334155;
-  border-radius:18px;
-  padding:15px;
-  margin-bottom:14px;
-}
-
-.card h2{
-  margin:0 0 8px;
-}
-
-.badge{
-  display:inline-block;
-  margin-top:8px;
-  padding:8px 12px;
-  border-radius:12px;
-  background:#2563eb;
-  color:white;
-  font-weight:bold;
-}
-
-.nav{
-  display:inline-block;
-  margin-top:10px;
-  padding:10px 14px;
-  background:#16a34a;
-  color:white;
-  text-decoration:none;
-  border-radius:12px;
-  font-weight:bold;
+.popup{
+color:black;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>🚛 Euro Truck Stop</h1>
-  <p>Паркинги и места за нощувка в Европа</p>
-</header>
+<h1>🚛 Euro Truck Stop</h1>
 
 <div id="map"></div>
-<div id="list"></div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script>
-const SUPABASE_URL = "https://cwrcaweybftuphjgrtba.supabase.co";
-const SUPABASE_KEY = "sb_publishable_F9Mz5V-ejFuuQ24whlFY_w_jSJ8jV4J";
 
-const map = L.map("map").setView([54.5, 12], 5);
+const map = L.map('map').setView([56, 12], 5);
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "© OpenStreetMap"
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: '&copy; OpenStreetMap'
 }).addTo(map);
 
-async function loadParkings() {
-  const list = document.getElementById("list");
-  list.innerHTML = "<p>Зареждане на паркинги...</p>";
+fetch('export%20(1).geojson')
+.then(response => response.json())
+.then(data => {
 
-  try {
-    const response = await fetch(`${SUPABASE_URL}/rest/v1/parkings?select=*`, {
-      headers: {
-        apikey: SUPABASE_KEY,
-        Authorization: `Bearer ${SUPABASE_KEY}`
-      }
-    });
+L.geoJSON(data, {
 
-    const data = await response.json();
-    list.innerHTML = "";
+pointToLayer: function(feature, latlng) {
 
-    data.forEach(parking => {
-      const lat = Number(parking.latitude);
-      const lng = Number(parking.longitude);
+return L.marker(latlng);
 
-      const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+},
 
-      if (!isNaN(lat) && !isNaN(lng)) {
-        L.marker([lat, lng]).addTo(map)
-          .bindPopup(`
-            <b>${parking.name}</b><br>
-            ${parking.country || ""}<br>
-            ${parking.city || ""}<br>
-            <a href="${mapsUrl}" target="_blank">Навигирай</a>
-          `);
-      }
+onEachFeature: function(feature, layer) {
 
-      const card = document.createElement("div");
-      card.className = "card";
+const tags = feature.properties || {};
 
-      card.innerHTML = `
-        <h2>${parking.name || "Truck Parking"}</h2>
-        <div>📍 ${parking.country || ""} ${parking.city || ""}</div>
-        <div class="badge">${parking.safe ? "🟢 SAFE" : "🔴 CHECK"}</div>
-        <br>
-        <a class="nav" href="${mapsUrl}" target="_blank">🗺️ Навигирай</a>
-      `;
+const name = tags.name || "Truck Parking";
 
-      list.appendChild(card);
-    });
+layer.bindPopup(`
+<div class="popup">
+<h3>${name}</h3>
+<p>🚛 Truck Parking</p>
+</div>
+`);
 
-  } catch (error) {
-    list.innerHTML = "<p>Грешка при зареждане на паркингите.</p>";
-    console.error(error);
-  }
 }
 
-loadParkings();
+}).addTo(map);
+
+});
+
 </script>
 
 </body>
