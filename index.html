@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Euro Truck Stop</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
   <style>
     body {
       margin: 0;
@@ -11,77 +14,165 @@
       background: #0f172a;
       color: white;
     }
-    .hero {
-      min-height: 100vh;
-      padding: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
+    header {
+      padding: 18px;
       text-align: center;
-      background: radial-gradient(circle at top, #1d4ed8, transparent 35%), #0f172a;
+      background: #020617;
     }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
     }
-    p {
+
+    header p {
       color: #cbd5e1;
-      font-size: 18px;
-      line-height: 1.5;
+      margin: 8px 0 0;
     }
-    .card {
+
+    #map {
+      height: 65vh;
+      width: 100%;
+    }
+
+    .panel {
+      padding: 16px;
+      background: #0f172a;
+    }
+
+    .spot {
       background: #111827;
       border: 1px solid #334155;
-      border-radius: 22px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 420px;
-      text-align: left;
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 12px;
     }
-    .button {
+
+    .spot h3 {
+      margin: 0 0 6px;
+    }
+
+    .spot p {
+      margin: 4px 0;
+      color: #cbd5e1;
+    }
+
+    .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 15px 24px;
+      margin-top: 10px;
+      padding: 10px 14px;
       background: #2563eb;
       color: white;
       text-decoration: none;
-      border-radius: 14px;
+      border-radius: 10px;
       font-weight: bold;
-    }
-    .features {
-      display: grid;
-      gap: 12px;
-      margin-top: 20px;
-    }
-    .feature {
-      background: #020617;
-      padding: 14px;
-      border-radius: 14px;
-      border: 1px solid #1e293b;
     }
   </style>
 </head>
+
 <body>
-  <section class="hero">
+  <header>
     <h1>🚛 Euro Truck Stop</h1>
-    <p>Find safe truck parking across Europe and Scandinavia.</p>
+    <p>Паркинги и места за нощувка в Европа и Скандинавия</p>
+  </header>
 
-    <a class="button" href="https://www.google.com/maps" target="_blank">
-      Open Map
-    </a>
+  <div id="map"></div>
 
-    <div class="card">
-      <h2>What is coming?</h2>
-      <div class="features">
-        <div class="feature">🅿️ Truck parking locations</div>
-        <div class="feature">🛡️ Safe and dangerous place reports</div>
-        <div class="feature">🚿 Showers, toilets, food and fuel</div>
-        <div class="feature">⭐ Driver ratings and comments</div>
-        <div class="feature">📍 Navigation with Google Maps</div>
-      </div>
-    </div>
+  <div class="panel" id="spotsList"></div>
 
-    <p>Built for truck drivers. Coming soon.</p>
-  </section>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    const spots = [
+      {
+        name: "Truck Stop Malmö",
+        country: "Швеция",
+        type: "TIR паркинг",
+        safe: "Спокойно",
+        info: "Душ, WC, гориво, храна",
+        lat: 55.6050,
+        lng: 13.0038
+      },
+      {
+        name: "Padborg Truck Parking",
+        country: "Дания",
+        type: "Охраняем паркинг",
+        safe: "Много добро място",
+        info: "Охрана, душ, ресторант",
+        lat: 54.8265,
+        lng: 9.3620
+      },
+      {
+        name: "Hamburg A7 Autohof",
+        country: "Германия",
+        type: "Autohof",
+        safe: "Пълни се вечер",
+        info: "Душ, WC, храна, гориво",
+        lat: 53.5511,
+        lng: 9.9937
+      },
+      {
+        name: "Rotterdam Industrial Area",
+        country: "Нидерландия",
+        type: "Индустриална зона",
+        safe: "Внимание вечер",
+        info: "Място за пауза, без гаранция за охрана",
+        lat: 51.9244,
+        lng: 4.4777
+      },
+      {
+        name: "Oslo E6 Rest Area",
+        country: "Норвегия",
+        type: "Rest area",
+        safe: "Става за нощувка",
+        info: "WC, тихо място, зимни условия",
+        lat: 59.9139,
+        lng: 10.7522
+      },
+      {
+        name: "Lille Industrial Parking",
+        country: "Франция",
+        type: "Индустриално място",
+        safe: "Риск от кражби",
+        info: "Само ако няма друг вариант",
+        lat: 50.6292,
+        lng: 3.0573
+      }
+    ];
+
+    const map = L.map("map").setView([54.5, 10.5], 5);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "© OpenStreetMap"
+    }).addTo(map);
+
+    const list = document.getElementById("spotsList");
+
+    spots.forEach((spot) => {
+      const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+
+      L.marker([spot.lat, spot.lng]).addTo(map)
+        .bindPopup(`
+          <b>${spot.name}</b><br>
+          ${spot.country}<br>
+          ${spot.type}<br>
+          ${spot.safe}<br>
+          <a href="${mapsUrl}" target="_blank">Навигирай</a>
+        `);
+
+      list.innerHTML += `
+        <div class="spot">
+          <h3>${spot.name}</h3>
+          <p>📍 ${spot.country}</p>
+          <p>🅿️ ${spot.type}</p>
+          <p>🛡️ ${spot.safe}</p>
+          <p>ℹ️ ${spot.info}</p>
+          <a class="btn" href="${mapsUrl}" target="_blank">Навигирай</a>
+        </div>
+      `;
+    });
+  </script>
 </body>
 </html>
