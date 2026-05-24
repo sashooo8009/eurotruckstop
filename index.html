@@ -1,178 +1,266 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Euro Truck Stop</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Euro Truck Stop</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#020617;
+color:white;
+}
 
-    header {
-      padding: 18px;
-      text-align: center;
-      background: #020617;
-    }
+header{
+padding:20px;
+text-align:center;
+background:#020617;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+header h1{
+margin:0;
+font-size:42px;
+}
 
-    header p {
-      color: #cbd5e1;
-      margin: 8px 0 0;
-    }
+header p{
+color:#cbd5e1;
+margin-top:10px;
+font-size:18px;
+}
 
-    #map {
-      height: 65vh;
-      width: 100%;
-    }
+.topbar{
+padding:12px;
+display:flex;
+gap:10px;
+background:#0f172a;
+}
 
-    .panel {
-      padding: 16px;
-      background: #0f172a;
-    }
+input{
+flex:1;
+padding:14px;
+border:none;
+border-radius:12px;
+font-size:16px;
+}
 
-    .spot {
-      background: #111827;
-      border: 1px solid #334155;
-      border-radius: 16px;
-      padding: 14px;
-      margin-bottom: 12px;
-    }
+button{
+padding:14px;
+border:none;
+border-radius:12px;
+background:#2563eb;
+color:white;
+font-weight:bold;
+font-size:16px;
+}
 
-    .spot h3 {
-      margin: 0 0 6px;
-    }
+#map{
+height:55vh;
+width:100%;
+}
 
-    .spot p {
-      margin: 4px 0;
-      color: #cbd5e1;
-    }
+.panel{
+padding:16px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 14px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-  </style>
+.card{
+background:#111827;
+border:1px solid #334155;
+border-radius:20px;
+padding:16px;
+margin-bottom:16px;
+}
+
+.card h3{
+margin-top:0;
+font-size:24px;
+}
+
+.safe{
+color:#22c55e;
+font-weight:bold;
+}
+
+.danger{
+color:#ef4444;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:12px 16px;
+background:#2563eb;
+border-radius:12px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
 </head>
 
 <body>
-  <header>
-    <h1>🚛 Euro Truck Stop</h1>
-    <p>Паркинги и места за нощувка в Европа и Скандинавия</p>
-  </header>
 
-  <div id="map"></div>
+<header>
+<h1>🚛 Euro Truck Stop</h1>
+<p>Safe truck parking across Europe</p>
+</header>
 
-  <div class="panel" id="spotsList"></div>
+<div class="topbar">
+<input type="text" id="search" placeholder="Търси държава или паркинг">
+<button onclick="findMe()">📍 Аз</button>
+</div>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<div id="map"></div>
 
-  <script>
-    const spots = [
-      {
-        name: "Truck Stop Malmö",
-        country: "Швеция",
-        type: "TIR паркинг",
-        safe: "Спокойно",
-        info: "Душ, WC, гориво, храна",
-        lat: 55.6050,
-        lng: 13.0038
-      },
-      {
-        name: "Padborg Truck Parking",
-        country: "Дания",
-        type: "Охраняем паркинг",
-        safe: "Много добро място",
-        info: "Охрана, душ, ресторант",
-        lat: 54.8265,
-        lng: 9.3620
-      },
-      {
-        name: "Hamburg A7 Autohof",
-        country: "Германия",
-        type: "Autohof",
-        safe: "Пълни се вечер",
-        info: "Душ, WC, храна, гориво",
-        lat: 53.5511,
-        lng: 9.9937
-      },
-      {
-        name: "Rotterdam Industrial Area",
-        country: "Нидерландия",
-        type: "Индустриална зона",
-        safe: "Внимание вечер",
-        info: "Място за пауза, без гаранция за охрана",
-        lat: 51.9244,
-        lng: 4.4777
-      },
-      {
-        name: "Oslo E6 Rest Area",
-        country: "Норвегия",
-        type: "Rest area",
-        safe: "Става за нощувка",
-        info: "WC, тихо място, зимни условия",
-        lat: 59.9139,
-        lng: 10.7522
-      },
-      {
-        name: "Lille Industrial Parking",
-        country: "Франция",
-        type: "Индустриално място",
-        safe: "Риск от кражби",
-        info: "Само ако няма друг вариант",
-        lat: 50.6292,
-        lng: 3.0573
-      }
-    ];
+<div class="panel" id="list"></div>
 
-    const map = L.map("map").setView([54.5, 10.5], 5);
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
-      attribution: "© OpenStreetMap"
-    }).addTo(map);
+<script>
 
-    const list = document.getElementById("spotsList");
+const map = L.map('map').setView([55,10],5);
 
-    spots.forEach((spot) => {
-      const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+attribution:'© OpenStreetMap'
+}).addTo(map);
 
-      L.marker([spot.lat, spot.lng]).addTo(map)
-        .bindPopup(`
-          <b>${spot.name}</b><br>
-          ${spot.country}<br>
-          ${spot.type}<br>
-          ${spot.safe}<br>
-          <a href="${mapsUrl}" target="_blank">Навигирай</a>
-        `);
+const spots = [
 
-      list.innerHTML += `
-        <div class="spot">
-          <h3>${spot.name}</h3>
-          <p>📍 ${spot.country}</p>
-          <p>🅿️ ${spot.type}</p>
-          <p>🛡️ ${spot.safe}</p>
-          <p>ℹ️ ${spot.info}</p>
-          <a class="btn" href="${mapsUrl}" target="_blank">Навигирай</a>
-        </div>
-      `;
-    });
-  </script>
+{
+name:"Malmö Truck Stop",
+country:"Sweden",
+safe:true,
+text:"Safe parking with showers and food",
+lat:55.605,
+lng:13.0038
+},
+
+{
+name:"Padborg Parking",
+country:"Denmark",
+safe:true,
+text:"Secure truck parking",
+lat:54.826,
+lng:9.362
+},
+
+{
+name:"Hamburg A7",
+country:"Germany",
+safe:true,
+text:"Large truck stop and fuel",
+lat:53.551,
+lng:9.993
+},
+
+{
+name:"Rotterdam Industrial",
+country:"Netherlands",
+safe:false,
+text:"Industrial overnight area",
+lat:51.924,
+lng:4.477
+},
+
+{
+name:"Lille Industrial",
+country:"France",
+safe:false,
+text:"Risk of theft at night",
+lat:50.629,
+lng:3.057
+}
+
+];
+
+const list=document.getElementById("list");
+
+spots.forEach(spot=>{
+
+const color = spot.safe ? "green" : "red";
+
+const icon = L.icon({
+iconUrl:`https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
+shadowUrl:'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+iconSize:[25,41],
+iconAnchor:[12,41]
+});
+
+const maps=`https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`;
+
+L.marker([spot.lat,spot.lng],{icon}).addTo(map)
+.bindPopup(`
+<b>${spot.name}</b><br>
+${spot.country}<br>
+${spot.text}<br><br>
+<a href="${maps}" target="_blank">Навигирай</a>
+`);
+
+list.innerHTML += `
+<div class="card">
+<h3>${spot.name}</h3>
+
+<p>📍 ${spot.country}</p>
+
+<p class="${spot.safe ? 'safe':'danger'}">
+${spot.safe ? '🟢 SAFE':'🔴 DANGEROUS'}
+</p>
+
+<p>${spot.text}</p>
+
+<a class="btn" href="${maps}" target="_blank">
+🗺️ Google Maps
+</a>
+
+</div>
+`;
+
+});
+
+function findMe(){
+
+if(navigator.geolocation){
+
+navigator.geolocation.getCurrentPosition(position=>{
+
+const lat=position.coords.latitude;
+const lng=position.coords.longitude;
+
+map.setView([lat,lng],10);
+
+L.marker([lat,lng]).addTo(map)
+.bindPopup("📍 Ти си тук")
+.openPopup();
+
+});
+
+}
+
+}
+
+document.getElementById("search").addEventListener("input",function(){
+
+const value=this.value.toLowerCase();
+
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+if(card.innerText.toLowerCase().includes(value)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
